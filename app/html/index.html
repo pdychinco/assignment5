@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Princeton Dychinco Resume</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>GPU Price Checker</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
-    
   </head>
 
   <body>
@@ -13,118 +12,102 @@
       <header class="grid-container header">
         <div class="grid-container itemA">
           <div class="grid-item itemA2">
-            <p>Dychinco Resume</p>
+            <p>Fire GPUs</p>
           </div>
         </div>
-        <div class="grid-container itemB">
-          <div class="grid-item itemB1">
-            <img
-              src="/img/home.jpeg"
-              alt="Home Image"
-              width="25"
-              height="25"
-            />
+        <div class="grid-container" id="righthead">
+          <div class="grid-container itemB">
+            <div class="grid-item itemB1">
+              <img
+                src="/img/home.jpeg"
+                alt="Home Image"
+                width="25"
+                height="25"
+              />
+            </div>
+            <div class="grid-item itemB2">
+              <p>Current Price</p>
+            </div>
           </div>
-          <div class="grid-item itemB2">
-            <p>Home</p>
+          <div class="grid-container itemC">
+            <div class="grid-item itemC1">
+              <img
+                src="/img/hat.jpeg"
+                alt="Education Image"
+                width="25"
+                height="25"
+              />
+            </div>
+            <div class="grid-item itemC2">
+              <p>Price History</p>
+            </div>
           </div>
-        </div>
-        <div class="grid-container itemC">
-          <div class="grid-item itemC1">
-            <img
-              src="/img/hat.jpeg"
-              alt="Education Image"
-              width="25"
-              height="25"
-            />
+          <div class="grid-container itemD">
+            <div class="grid-item itemD1">
+              <img
+                src="/img/work.jpeg"
+                alt="Work Image"
+                width="25"
+                height="25"
+              />
+            </div>
+            <div class="grid-item itemD2">
+              <p>NVIDIA</p>
+            </div>
           </div>
-          <div class="grid-item itemC2">
-            <p>Education</p>
-          </div>
-        </div>
-        <div class="grid-container itemD">
-          <div class="grid-item itemD1">
-            <img
-              src="/img/work.jpeg"
-              alt="Work Image"
-              width="25"
-              height="25"
-            />
-          </div>
-          <div class="grid-item itemD2">
-            <p>Work Experience</p>
-          </div>
-        </div>
-        <div class="grid-container itemE">
-          <div class="grid-item itemE1">
-            <img
-              src="/img/tech.jpeg"
-              alt="Technical Image"
-              width="25"
-              height="25"
-            />
-          </div>
-          <div class="grid-item itemE2">
-            <p>Technical Skills</p>
-          </div>
-        </div>
-        <div class="grid-container aside">
-          <div class="grid-item aside1">
-            <p>Latest Tweet</p>
-          </div>
-          <div class="grid-item aside2">
-            <p>Latest Post</p>
+          <div class="grid-container itemE">
+            <div class="grid-item itemE1">
+              <img
+                src="/img/tech.jpeg"
+                alt="Technical Image"
+                width="25"
+                height="25"
+              />
+            </div>
+            <div class="grid-item itemE2">
+              <p>AMD</p>
+            </div>
           </div>
         </div>
       </header>
-      <figure class="grid-container" id="image">
-        <figcaption class="grid-container imagetext">
-          <div class="grid-item spacer"></div>
-          <div class="grid-item firstline">
-            <p>Welcome to my Resume</p>
-          </div>
-          <div class="grid-item secondline">
-            <p>Please see below for various projects</p>
-          </div>
-        </figcaption>
-      </figure>
+      <div class="grid-container" id="hero">
+        <div class="grid-item" id="herotext">
+          <h3>Welcome to the best chance of finding a GPU</h3>
+          <p>We search across various vendors and notify of price drops and restock</p>
+        </div>
+      </div>
       <div class="grid-container nav">
         <div class="grid-item nav1">
-          <p>Level 1</p>
+          <p>Price History</p>
         </div>
         <div class="grid-item nav2">
-          <p>Level 2</p>
+          <p>NVIDIA</p>
         </div>
         <div class="grid-item nav3">
-          <p>Level 3</p>
+          <p>AMD</p>
         </div>
         <div class="grid-item nav4">
-          <p>Level 4</p>
+          <p>Intel</p>
         </div>
       </div>
       <div class="grid-container contact">
         <div class="grid-item mailicon">
-          <img
-            src="/img/mail.jpeg"
-            alt="Mail Icon"
-            width="25"
-            height="25"
-          />
+          <img src="/img/mail.jpeg" alt="Mail Icon" width="25" height="25" />
         </div>
         <div class="grid-item contactblurb">
           <p>
-            Please leave your email address, so that I can contact you again
-          </p>
+            Please leave your email address to subscribe to weekly updates.
         </div>
         <div class="grid-item emailfield">
           <input type="text" id="email" />
         </div>
-        <div class="grid-item contactbutton">
-          <button type="button">Contact Me</button>
+        <div class="grid-item subscribebutton">
+          <button type="button">Subscribe</button>
         </div>
       </div>
       <div class="grid-container articles">
         <div class="grid-item" id="tablePlaceholder"></div>
+        <div class="grid-item" id="jsonPlaceholder"></div>
       </div>
       <footer class="grid-container footer">
         <div class="grid-item contactinfo">
