@@ -27,11 +27,7 @@ ajaxGET("/data/data.js", function (data) {
   console.log("Before parsing", parsedData);
   let str = "<ol>"
   for (let i = 0; i < parsedData.length; i++) {
-      str += "<li>" + parsedData[i]["name"] + "</li>";
-      str += "<li>" + parsedData[i]["current price"] + "</li>";
-      str += "<li>" + parsedData[i]["msrp"] + "</li>";
-      str += "<li>" + parsedData[i]["stock"] + "</li>";
-      str += "<li>" + parsedData[i]["memory"] + "</li>";
+      str += "<li>" + parsedData[i]["name"] +" "+ parsedData[i]["current price"] +" "+ parsedData[i]["msrp"] +" "+parsedData[i]["stock"] +" "+parsedData[i]["memory"] +"</li>";
   }
   str += "</ol>";
   document.getElementById("jsonPlaceholder").innerHTML = str;
