@@ -1,6 +1,6 @@
 @font-face {
   font-family: importFont;
-  src: url(../../app/fonts/GOVER.ttf);
+  src: url(/fonts/GOVER.ttf);
 }
 
 p {
@@ -22,9 +22,17 @@ p {
 .header {
   grid-row: 1;
   grid-column: 1 / span 4;
-  background-color: crimson;
+  background-color: lightblue;
 }
 
+.itemA2 {
+  padding-top: 1em;
+  /* background-color: burlywood; */
+}
+
+.itemB, .itemC, .itemD, .itemE{
+  margin: 1em;
+}
 #hero {
   grid-row: 2 / span 3;
   grid-column: 1 / span 4;
@@ -62,7 +70,7 @@ p {
 .footer {
   grid-row: 8;
   grid-column: 1 / span 4;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
 }
 .itemA, .itemB, .itemC, .itemD, .itemE {
   grid-row: 1;
@@ -70,7 +78,7 @@ p {
 
 #righthead {
   width: fit-content;
-  background-color: blue;
+  /* background-color: blue; */
   float: right;
   grid-row: 1;
   grid-column: 4;
@@ -110,7 +118,8 @@ p {
 .itemC2,
 .itemD2,
 .itemE2 {
-  color: rgb(73, 185, 255);
+  font-family: importFont;;
+  padding-top: 1em;
 }
 
 .nav1, .nav2, .nav3, .nav4 {
@@ -143,6 +152,9 @@ p {
   text-align: center;
 }
 
+#tablePlaceholder {
+  padding-left: 25%;
+}
 .mailicon {
   grid-column: 1;
 }
@@ -168,6 +180,35 @@ p {
   grid-column: 5;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
+  #tablePlaceholder {
+    padding-left: 0;
+  }
+
+  .itemB, .itemC, .itemD, .itemE{
+    margin: 0.5em;
+  }
+
+  .mailicon, .emailfield {
+    grid-row: 1;
+  }
   
+  .mailicon {
+    position: relative;
+    float: inline-end;
+  }
+  .contactblurb {
+    grid-column: 1;
+  }
+  
+  .contactblurb, .subscribebutton {
+    grid-row: 2;
+  }
+  
+  .emailfield {
+    grid-column: 2;
+  }
+  .subscribebutton {
+    grid-column: 2;
+  }
 }
